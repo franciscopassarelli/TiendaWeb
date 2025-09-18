@@ -1,13 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TiendaWeb</title>
+    <title>Tienda de Ropa | UrbanStyle</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .product h3 {
+            margin: 0.5rem 0;
+        }
+
+        .product p {
+            margin: 0.5rem 0;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        .product button {
+            padding: 0.5rem 1rem;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #219150;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>TiendaWeb</h1>
-    
+    <header>
+        <h1>UrbanStyle - Tienda de Ropa</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Remeras</a>
+            <a href="#">Pantalones</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Productos Destacados</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Remera+Negra" alt="Remera Negra">
+                <h3>Remera Negra</h3>
+                <p>$3.500</p>
+                <button onclick="agregarAlCarrito('Remera Negra')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Jean+Azul" alt="Jean Azul">
+                <h3>Jean Azul</h3>
+                <p>$7.200</p>
+                <button onclick="agregarAlCarrito('Jean Azul')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Campera+Urbana" alt="Campera Urbana">
+                <h3>Campera Urbana</h3>
+                <p>$12.000</p>
+                <button onclick="agregarAlCarrito('Campera Urbana')">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x300?text=Remera+Blanca" alt="Remera Blanca">
+                <h3>Remera Blanca</h3>
+                <p>$3.200</p>
+                <button onclick="agregarAlCarrito('Remera Blanca')">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UrbanStyle. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function agregarAlCarrito(producto) {
+            alert(`"${producto}" fue agregado al carrito.`);
+        }
+    </script>
+
 </body>
 </html>
