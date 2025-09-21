@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <style>
+            body{
+                font-family: arial, sans-serif;
+                margin: 0;
+                padding:0;
+                background: #f4f4f4;
+            }
+            header, footer {
+                background: #333;
+                color:#fff;
+                text-align: center;
+                padding:1rem;
+            }
+            nav a{
+                color: #fff;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+            main {
+                padding: 2rem
+            }
+            .contact{
+                max-width: 500px;
+                margin:auto;
+                background: #fff;
+                padding:2rem;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .contact h2 {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+            form{
+                display:flex;
+                flex-direction: column;
+            }
+            label{
+                margin: 0.5rem 0 0.2rem;
+            }
+            input,textarea{
+                padding:0.7rem;
+                border:1px solid #ccc;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+            }
+            button{
+                padding: 0.8rem;
+                background: #333;
+                color: #fff,
+                border:none;
+                border-radius:5px;
+                cursor:pointer;
+                transition:background 0.3s ease;
+            }
+            button-hover{
+                background: #555;
+            }
+        </style>
+        </head>
+        <body>
+            <header>
+                <h1>UrbanStyle</h1>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </header>
+            <main>
+                <section class="contact">
+                    <h2>Contáctanos</h2>
+                    <form>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <p>© 2025 UrbanStyle. Todos los derechos reservados.</p>
+            </footer>
+        </body>
+</html>
