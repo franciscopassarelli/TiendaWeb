@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda de Ropa | UrbanStyle</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./sobrenosotros.css">
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <h1>UrbanStyle</h1>
     <nav>
+      <a href="./index.html" class="active">Inicio</a>
       <a href="#">Remeras</a>
       <a href="#">Pantalones</a>
       <a href="./contacto.html">Contacto</a>
-      <a href="./sobrenosotros.html">Sobre nosotros</a>
     </nav>
   </header>
 
+  <!-- Productos -->
   <main class="container">
     <h2>Productos Destacados</h2>
     <div class="product-grid">
@@ -26,40 +27,52 @@
         <img src="https://via.placeholder.com/300x300?text=Remera+Negra" alt="Remera Negra">
         <h3>Remera Negra</h3>
         <p>$3.500</p>
-        <button onclick="agregarAlCarrito('Remera Negra')">Agregar al carrito</button>
+        <button onclick="agregarAlCarrito('Remera Negra')">🛒 Agregar</button>
       </article>
 
       <article class="product">
         <img src="https://via.placeholder.com/300x300?text=Jean+Azul" alt="Jean Azul">
         <h3>Jean Azul</h3>
         <p>$7.200</p>
-        <button onclick="agregarAlCarrito('Jean Azul')">Agregar al carrito</button>
+        <button onclick="agregarAlCarrito('Jean Azul')">🛒 Agregar</button>
       </article>
 
       <article class="product">
         <img src="https://via.placeholder.com/300x300?text=Campera+Urbana" alt="Campera Urbana">
         <h3>Campera Urbana</h3>
         <p>$12.000</p>
-        <button onclick="agregarAlCarrito('Campera Urbana')">Agregar al carrito</button>
+        <button onclick="agregarAlCarrito('Campera Urbana')">🛒 Agregar</button>
       </article>
 
       <article class="product">
         <img src="https://via.placeholder.com/300x300?text=Remera+Blanca" alt="Remera Blanca">
         <h3>Remera Blanca</h3>
         <p>$3.200</p>
-        <button onclick="agregarAlCarrito('Remera Blanca')">Agregar al carrito</button>
+        <button onclick="agregarAlCarrito('Remera Blanca')">🛒 Agregar</button>
       </article>
     </div>
   </main>
 
+  <!-- Sobre nosotros -->
+  <section class="about">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>En <strong>UrbanStyle</strong> creemos que la moda urbana debe ser <em>accesible</em>, <em>cómoda</em> y <em>auténtica</em>.</p>
+      <p>Ofrecemos prendas de calidad que acompañan tu estilo en cada momento.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 UrbanStyle. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- JS -->
   <script>
     function agregarAlCarrito(producto) {
       alert(`"${producto}" fue agregado al carrito.`);
     }
   </script>
+
 </body>
 </html>
