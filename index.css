@@ -107,6 +107,45 @@ h2 {
   font-size: 1.1rem;
 }
 
+.color-swatch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+}
+
+.color-black { background-color: black; }
+.color-normal { background-color: #5d483c; }
+
+.color-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.color-beige { background-color: #e8c89c; }
+.color-gris  { background-color: #7d7d7d; }
+.color-verde { background-color: #77ba6a; }
+
+.color-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.color-verde { background-color: #77ba6a; }
+.color-azul { background-color: rgb(86, 86, 185); }
+
 /* Botón */
 .product button {
   padding: 0.6rem 1.4rem;
