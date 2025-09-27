@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa | UrbanStyle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+  <header>
+    <h1>UrbanStyle</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="./productos.html">Productos</a>
+      <a href="./contacto.html">Contacto</a>
+      <a href="./sobrenosotros.html">Sobre nosotros</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Productos Destacados</h2>
+
+    <div class="product-grid">
+
+      
+
+      <article class="product">
+        <img src="campera-magnet-negra.jpg" alt="Campera Magnet" class="front">
+        <h3>Campera Magnet</h3>
+        <p>$40.000</p>
+        <button onclick="agregarAlCarrito('Campera Magnet')">Agregar al carrito</button>
+        <p class="product-colors">
+  <span class="color-swatch color-black"></span>
+  <span class="color-swatch color-normal"></span>
+</p>
+      </article>
+
+      <article class="product">
+        <img src="canguro-fusion-beige.jpg" alt="Canguro Fusion" class="front">
+        <h3>Canguro Fusion</h3>
+        <p>$55.000</p>
+        <button onclick="agregarAlCarrito('Canguro Fusion')">Agregar al carrito</button>
+        <p class="product-colors">
+        <span class="color-swatch color-beige"></span>
+        <span class="color-swatch color-gris"></span>
+        <span class="color-swatch color-verde"></span>
+
+        </p>
+        </article>
+
+        <article class="product">
+        <img src="remera-newt-verde.jpg" alt="Remera Newt" class="front">
+        <h3>Remera Newt</h3>
+        <p>$25.000</p>
+        <button onclick="agregarAlCarrito('Remera Newt')">Agregar al carrito</button>
+        <p class="product-colors">
+        <span class="color-swatch color-verde"></span>
+        <span class="color-swatch color-azul"></span>
+        
+        </p>
+
+      </article>
+
+      <article class="product">
+        <img src="remera-overzise.webp" alt="Remera Oversize">
+        <h3>Remera Oversize</h3>
+        <p>$3.500</p>
+        <button onclick="agregarAlCarrito('Remera Oversize')">Agregar al carrito</button>
+      </article>
+
+      <article class="product">
+        <img src="remera-boxy.jpg" alt="Remera Boxy Fit">
+        <h3>Remera Boxy Fit</h3>
+        <p>$7.200</p>
+        <button onclick="agregarAlCarrito('Remera Boxy Fit')">Agregar al carrito</button>
+      </article>
+
+      <article class="product">
+        <img src="musculosa-oversize.jpg" alt="Musculosa Oversize">
+        <h3>Musculosa Oversize</h3>
+        <p>$12.000</p>
+        <button onclick="agregarAlCarrito('Musculosa Oversize')">Agregar al carrito</button>
+      </article>
+
+      <article class="product">
+        <img src="remera-basica.jpg" alt="Remera Básica">
+        <h3>Remera Básica</h3>
+        <p>$3.200</p>
+        <button onclick="agregarAlCarrito('Remera Básica')">Agregar al carrito</button>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 UrbanStyle. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function agregarAlCarrito(producto) {
+      alert(`"${producto}" fue agregado al carrito.`);
+    }
+  </script>
+</body>
+</html>
