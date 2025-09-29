@@ -7,13 +7,16 @@
 
 /* Body */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altura mínima de toda la pantalla */
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f8f8;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header */
+/* Header: mantenemos como estaba */
 header {
   background-color: #111;
   color: #fff;
@@ -51,89 +54,20 @@ nav a.active {
   border-bottom: 2px solid #27ae60;
 }
 
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #111;
-}
-
-/* Grid de productos */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.product {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-}
-
-.product img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.product h3 {
-  margin: 0.7rem 0;
-  font-size: 1.2rem;
-  color: #111;
-}
-
-.product p {
-  margin: 0.5rem 0 1rem;
-  font-weight: bold;
-  color: #27ae60;
-  font-size: 1.1rem;
-}
-
-/* Botón */
-.product button {
-  padding: 0.7rem 1.2rem;
-  background-color: #27ae60;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.product button:hover {
-  background-color: #219150;
-  transform: scale(1.05);
-}
-
-/* Sección "Sobre Nosotros" */
+/* About: centrado vertical y horizontal */
 .about {
+  flex: 1; /* ocupa el espacio disponible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("https://media.istockphoto.com/id/1482197786/photo/basketball-hands-and-woman-on-the-outdoor-court-floor-with-urban-fashion-for-influencer.jpg?s=1024x1024&w=is&k=20&c=NwG_pI4C0ZQnIwwtSZOnUi6pDIpkDSsELSgcnKot4TU=");
   background-size: cover;
   background-position: center;
-  color: #fff;
   padding: 4rem 1rem;
-  margin-top: 2rem;
-  border-radius: 8px;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .about::before {
@@ -146,21 +80,23 @@ h2 {
   z-index: 0;
 }
 
-.about * {
+.about .container {
   position: relative;
   z-index: 1;
+  max-width: 800px;
 }
 
 .about h2 {
   margin-bottom: 1rem;
   font-size: 2.2rem;
+  color: #fff;
 }
 
 .about p {
-  max-width: 800px;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   line-height: 1.6;
   font-size: 1.15rem;
+  color: #fff;
 }
 
 /* Footer */
@@ -169,7 +105,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
   font-size: 0.9rem;
 }
 
