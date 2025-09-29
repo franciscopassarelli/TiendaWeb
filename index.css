@@ -163,3 +163,38 @@ footer {
     margin: 0.5rem 0;
   }
 }
+.tabla-precios {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tabla-precios h2 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #111;
+}
+
+.tabla-precios table {
+  width: 100%;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.tabla-precios th {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.tabla-precios tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
