@@ -6,39 +6,22 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #f8f8f8;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header & Footer */
-header, footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
+/* Header y navegación */
+.nav-link {
+  font-weight: 600;
+  color: #fff !important;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
-nav {
-  margin-top: 0.5rem;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-  color: #27ae60;
+.nav-link:hover {
+  color: #27ae60 !important;
 }
 
 /* Main */
@@ -103,11 +86,22 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s;
 }
 
 button:hover {
   background: #219150;
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #222, #444);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
 }
 
 /* Responsive */
@@ -120,8 +114,27 @@ button:hover {
     font-size: 1.5rem;
   }
 
-  nav a {
+  .nav-link {
     display: block;
     margin: 0.5rem 0;
   }
 }
+
+
+.contact {
+  max-width: 450px; /* más angosto */
+  margin: 1rem auto; /* menos espacio arriba/abajo */
+  padding: 1.2rem; /* menos padding interno */
+}
+
+input,
+textarea {
+  padding: 0.6rem; /* menos alto */
+  font-size: 0.9rem; /* texto un poco más chico */
+}
+
+button {
+  padding: 0.7rem; /* botón más compacto */
+  font-size: 0.9rem;
+}
+
