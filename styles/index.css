@@ -145,3 +145,14 @@ footer {
   font-size: 0.9rem;
   letter-spacing: 0.5px;
 }
+
+/*mantener color de h1*/
+h1 a {
+  color: inherit;          /* Usa el color del h1 */
+  text-decoration: none;   /* Quita el subrayado azul del link */
+}
+
+h1 a:hover {
+  color: inherit;          /* Mantiene el mismo color al pasar el mouse */
+  text-decoration: underline; /* Si querés, subraya solo al pasar el mouse */
+}

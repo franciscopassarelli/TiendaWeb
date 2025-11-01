@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Ropa | UrbanStyle</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <h1 class="mb-0 fw-bold text-decoration-underline"><a href="/index.html">UrbanStyle</a></h1>
+
+      <!-- Navbar Bootstrap -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+              <li class="nav-item"><a class="nav-link" href="./sobrenosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Productos Destacados</h2>
+
+    <div class="product-grid">
+
+      <!-- Producto 1 -->
+      <article class="product">
+        <img src="../images/campera-magnet-negra.jpg" alt="Campera Magnet" class="front">
+        <h3>Campera Magnet</h3>
+        <p>$40.000</p>
+        <button onclick="agregarAlCarrito('Campera Magnet')">Agregar al carrito</button>
+        <p class="product-colors">
+          <span class="color-swatch color-black"></span>
+          <span class="color-swatch color-normal"></span>
+        </p>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="product">
+        <img src="../images/campera-blancoynegro.jpg" alt="Campera ying yang" class="front">
+        <h3>Campera ying yang</h3>
+        <p>$55.000</p>
+        <button onclick="agregarAlCarrito('Campera ying yang')">Agregar al carrito</button>
+        <p class="product-colors">
+          <span class="color-swatch color-beige"></span>
+          <span class="color-swatch color-gris"></span>
+          <span class="color-swatch color-verde"></span>
+        </p>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="product">
+        <img src="../images/campera-combinada.jpg" alt="Campera MRZ" class="front">
+        <h3>Campera MRZ</h3>
+        <p>$25.000</p>
+        <button onclick="agregarAlCarrito('Campera MRZ')">Agregar al carrito</button>
+        <p class="product-colors">
+          <span class="color-swatch color-verde"></span>
+          <span class="color-swatch color-azul"></span>
+        </p>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="product">
+        <img src="../images/campera-corderito.jpg" alt="Corderito tricolor">
+        <h3>Corderito tricolor</h3>
+        <p>$28.000</p>
+        <button onclick="agregarAlCarrito('Corderito tricolor')">Agregar al carrito</button>
+        <p class="product-colors">
+          <span class="color-swatch color-celeste"></span>
+          <span class="color-swatch color-rojo"></span>
+        </p>
+      </article>
+
+      <!-- Producto 5 -->
+      <article class="product">
+        <img src="../images/campera-neoprene.jpg" alt="Campera Neoprene">
+        <h3>Campera Neoprene</h3>
+        <p>$3.500</p>
+        <button onclick="agregarAlCarrito('Campera Neoprene')">Agregar al carrito</button>
+      </article>
+
+      <!-- Producto 6 -->
+      <article class="product">
+        <img src="../images/campera-oso.jpg" alt="Campera Bear">
+        <h3>Campera Bear</h3>
+        <p>$7.200</p>
+        <button onclick="agregarAlCarrito('Campera Bear')">Agregar al carrito</button>
+      </article>
+
+      <!-- Producto 7 -->
+      <article class="product">
+        <img src="../images/campera-teddi.jpg" alt="Campera Teddi">
+        <h3>Campera Teddi</h3>
+        <p>$12.000</p>
+        <button onclick="agregarAlCarrito('Campera Teddi')">Agregar al carrito</button>
+      </article>
+
+      <!-- Producto 8 -->
+      <article class="product">
+        <img src="../images/campera-gabardina.jpg" alt="Campera Gabardina">
+        <h3>Campera Gabardina</h3>
+        <p>$3.200</p>
+        <button onclick="agregarAlCarrito('Campera Gabardina')">Agregar al carrito</button>
+      </article>
+
+    </div>
+
+   
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 UrbanStyle. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function agregarAlCarrito(producto) {
+      alert(`"${producto}" fue agregado al carrito.`);
+    }
+  </script>
+</body>
+</html>
