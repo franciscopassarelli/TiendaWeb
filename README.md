@@ -23,13 +23,20 @@ A continuación, se detallan los integrantes del grupo:
 
 ## Descripción del Proyecto
 
-Breve descripción del propósito del proyecto, objetivos y tecnologías utilizadas.  
-*(Ejemplo: Aplicación web E-commerce desarrollada con HTML y CSS).*
+Una tienda online.
+
+El objetivo fue crear una tienda online de ropa con una interfaz atractiva y funcional, donde el usuario pueda navegar entre categorías, ver productos, cambiar entre modo claro y oscuro, usar el formulario de contacto y simular un carrito de compras.
 
 ## Tecnologías Utilizadas
 
 - HTML / CSS. 
 - Bootstrap CSS. 
+- JavaScript
+
+Descripción de Tecnologías:
+Usamos HTML, CSS, JavaScript y Bootstrap.
+
+HTML para la estructura del sitio, CSS para los estilos personalizados, Bootstrap para la maquetación y el diseño responsive, y JavaScript para la parte lógica y dinámica, como el modo oscuro, el carrito y la carga de productos.
 
 ## Instalación y Ejecución
 
